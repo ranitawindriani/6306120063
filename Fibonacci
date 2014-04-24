@@ -28,6 +28,10 @@ public class Modul8_6306120063 {
         for(int i=1; i<=n; i++){
             System.out.print(fibo(i)+ " ");
         }
+        for(int i=1; i<=n; i++){
+            jumlah = jumlah + fibo(i);
+        }
         System.out.println("");
+        System.out.println("Jumlah : " + jumlah);
     }
 }
