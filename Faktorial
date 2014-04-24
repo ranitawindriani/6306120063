@@ -1,0 +1,28 @@
+package faktorial;
+
+import java.util.Scanner;
+
+public class FAKTORIAL {
+    public static void main(String[] args){
+        int jumlah = 1;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Masukkan Banyak Bilangan (FAKTORIAL): ");
+        int n= s.nextInt();
+        
+        if(n<1){
+            System.out.println("Bilangan yang dimasukkan harus >=0 ! ");
+        }
+        else{
+            for(int i=1; i<=n; i++){
+                System.out.print("");
+                if(i<=n){
+                    System.out.print(i);
+                }
+                System.out.print(" x ");
+                jumlah = jumlah * i;
+            }
+        }
+        System.out.println(" = " + jumlah);
+        System.out.println("Jadi Faktorial dari " + n + " adalah : " +jumlah);
+    }
+}
