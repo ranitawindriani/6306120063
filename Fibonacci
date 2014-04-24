@@ -1,0 +1,33 @@
+package modul8_6306120063;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Asisten
+ */
+public class Modul8_6306120063 {
+
+   private static int fibo(int n){
+       int f;
+       if(n==1 || n==2){
+           f=1;
+       }
+       else{
+           f = fibo(n-1) + fibo(n-2);
+       }
+       return f;
+   }
+   
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Masukkan Banyak Bilangan : ");
+        int n= s.nextInt();
+        int jumlah =0;
+        System.out.print("0 ");
+        for(int i=1; i<=n; i++){
+            System.out.print(fibo(i)+ " ");
+        }
+        System.out.println("");
+    }
+}
