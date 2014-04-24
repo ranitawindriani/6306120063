@@ -22,6 +22,7 @@ public class FAKTORIAL {
                 jumlah = jumlah * i;
             }
         }
-        System.out.println("");
+        System.out.println(" = " + jumlah);
+        System.out.println("Jadi Faktorial dari " + n + " adalah : " +jumlah);
     }
 }
